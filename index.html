@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  h1 {
+    font-size: 6em;
+    text-align: center;
+    color: rgb(150, 186, 255);
+  }
+  </style>
+</head>
+<body>
+
+<h1>PICTUARS OF SHOES AND IF YOU CLICK ON A PICTUAR OF A SHOE IT WILL TELL YOU A FORTUNE</h1>
+
+<img data-fortune="FOCUS ON THE TASK AT HAND!" src="01.jpg">
+<img data-fortune="RELAKS!" src="02.jpg">
+<img data-fortune="DON'T TRUST EVERY THING YOU HEAR!" src="3.jpg">
+<img data-fortune="USE THIS WEBSIGHT FOR LITTLE THINGS! NOT FOR BIG ONES!" src="4.jpg">
+<img data-fortune="LIVE EACH DAY LIKE IT IS YOUR LAST!" src="5.jpg">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(function() {
+  $('img').click(function() {
+    alert($(this).data('fortune'));
+  });
+});
+// alert('Hello! these are pictures of shoes and this page might update if you refresh it');
+
+</script>
+
+</body>
+</html>
